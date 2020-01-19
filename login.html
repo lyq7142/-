@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>登录页</title>
+        <style type="text/css">
+					
+                     *{
+                         margin: 0;
+                         padding: 0;
+                     }
+                                       
+                     html,body{
+                         height: 100%;
+                         width: 100%; 
+                         background-size:auto;
+                         background-image: url('bgd.png');
+                         background-repeat: no-repeat; 
+                        font-family: "Microsoft YaHei";                       
+                     }
+
+                     img.tou{     
+                         position: absolute;               
+                         top:12%;
+                         left: 38%;
+                         margin-left: auto;
+                         margin-right: auto;
+                        z-index: 1;
+                     }
+                    
+                     img.kuang{     
+                         position:absolute;  
+                         left: 36%;
+                         top: 10%;
+                         margin-left: auto;
+                         margin-right: auto;
+                     }
+
+                     .login-form{
+                         position: absolute;
+                         width: 74%;
+                         height: 310px;
+                         background:#fff;
+                         padding-top: 110px;
+                         padding-left: 42px;
+                         border-radius: 10px;
+                         top: 15%;    
+                         left: 8%;               
+                         margin-right: auto; 
+                         margin-left: auto;
+                         z-index: 0;
+                     }
+                     
+                     #username{
+				         position:relative;
+				         margin: 3px 0;
+                         font-size: 100%;
+                         text-align: center;
+                         color:#a19999;
+			         }
+
+                     #password{
+				        
+			        	 position:relative;
+				         margin: 3px 0;
+                         font-size: 100%;
+                         text-align: center;
+                         color:#a89e9e;
+                     }
+                     
+                     #username:focus{
+                        position:relative;
+				         margin: 3px 0;
+                         font-size: 100%;
+                         text-align: center;
+                         color:#3d3939;
+                     }
+
+                     #passwordw:focus{
+                        position:relative;
+				         margin: 3px 0;
+                         font-size: 100%;
+                         text-align: center;
+                         color:rgb(54, 47, 47);                    
+                    }
+                     
+                     input{
+				         size: 20px;
+				         color: rgb(97, 89, 89);
+				         border: 1px solid #c5bfbf;
+				         width: 75%;
+				         outline:none;
+				         padding: 0 5px;
+				         height: 50px;
+			        	 margin: 1px 1px 1px 1px;
+                         border-radius: 25px;
+			         }
+
+                     input:focus{
+                        box-shadow:1px 1px  rgb(224, 213, 213);
+                         size: 20px;
+				         color: rgb(114, 104, 104);
+				         border: 1px solid #928c8c;
+				         width: 75%;
+				         outline:none;
+				         padding: 0 5px;
+				         height: 50px;
+			        	 margin: 1px 1px 1px 1px;
+                         border-radius: 25px;
+                     }
+
+                    
+                     .forget{
+                         text-decoration: none;
+                         font-size: 14px;
+                         color: #a89e9e;
+                     }
+
+                     .register{
+                         position: absolute;
+                         left: 65%;
+                         text-decoration: none;
+                         color: #6fb5ee;
+                         font-size: 14px;
+                     }
+
+                     button{   
+			         	 width: 80%;   
+			        	 height: 50px;
+			        	 color: #81b5df;
+			        	 background-color:#ffffff;
+                         border: 1px solid #8cc6f5;
+			        	 line-height: 40px;  
+			        	 font-size: 16px;  
+                         text-align: center;
+				         border-radius: 25px;
+                         
+			         }
+                     p{
+                         position: absolute;                     
+                         color: #ffffff;
+                         top: 83%;   
+                         left: 13%;    
+                         font-size: 14px;  
+                         overflow: hidden;   
+                     }
+
+                   
+                    .wx{
+                        position: absolute;
+                        top: 90%;
+                        left: 15%;
+                    }
+                    .qq{
+                        position: absolute;
+                        top: 90%;
+                        left: 45%;
+                    }
+                    .wb{
+                        position: absolute;
+                        top: 90%;
+                        left: 75%;
+                    }
+
+		</style>	
+    </head>
+    <body>
+              <img src="touxiang.png" class="tou" width="100px" height="100px">
+              <img src="arc.png"  class="kuang" width="120px" height="40px">
+    <div class="login-form">
+         <form>  
+
+              <input type="text" id="username" value="admin"/>
+             <br><br/>
+              <input type="password" id="password" name="password" placeholder="请输入密码" />
+              <input type="hidden" name="password" value="123456">
+            <br>  <br/>
+              <a class="forget" href="#">忘记密码</a>              
+              <a class="register" href="https://forum.chasedream.com/member.php?mod=register">立即注册</a>
+             <br><br/>
+              <button onclick="myClick()">登录</button>
+            </form> 
+    </div>
+        <div class="bottomimg">
+          <a href="#"><img src="wx.png" class="wx" width="50px" height="50px"></a>
+          <a href="#"><img src="qq.png" class="qq" width="50px" height="50px"></a>
+          <a href="#"><img src="wb.png" class="wb" width="50px" height="50px"></a>
+        </div>
+
+        <p>————————第三方登录———————</p> 
+
+    <script>
+       let xmlhttp =new XMLHttpRequest();
+	let usernamestr=document.getElementById('username');
+    let passwordstr=document.getElementById('password');
+
+    function myClick(){
+    console.log(usernamestr.value)
+    console.log(passwordstr.value)
+    	xmlhttp.onreadystatechange = callbackl;
+    	xmlhttp.open("post","http://localhost:8080/a",true);
+    	xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    	xmlhttp.send("username="+usernamestr.value+"&password="+passwordstr.value);
+    }
+    function callbackl(){
+    	if(xmlhttp.readyState == 4)
+    		if(xmlhttp.status == 200){
+    			let data = xmlhttp.responseText;
+    			alert(data);
+    		}
+    }
+     
+      </script>
+             </body>
+             </html>
+    
