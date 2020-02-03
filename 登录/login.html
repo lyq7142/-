@@ -17,16 +17,12 @@
                          background-size:auto;
                          background-image: url('bgd.png');
                          background-repeat: no-repeat; 
-                        font-family: "Microsoft YaHei";                       
+                         font-family: "Microsoft YaHei";                       
                      }
 
                      img.tou{     
-                         position: absolute;               
-                         top:12%;
-                         left: 38%;
-                         margin-left: auto;
-                         margin-right: auto;
-                        z-index: 1;
+                         margin-top: -320px;
+                      
                      }
                     
                      img.kuang{     
@@ -39,14 +35,12 @@
 
                      .login-form{
                          position: absolute;
-                         width: 74%;
-                         height: 310px;
+                         width: 77%;
+                         height: 400px;
                          background:#fff;
-                         padding-top: 110px;
-                         padding-left: 42px;
                          border-radius: 10px;
-                         top: 15%;    
-                         left: 8%;               
+                         text-align: center;
+                         top: 15%;                        
                          margin-right: auto; 
                          margin-left: auto;
                          z-index: 0;
@@ -55,24 +49,23 @@
                      #username{
 				         position:relative;
 				         margin: 3px 0;
-                         font-size: 100%;
+                         font-size: 13px;
                          text-align: center;
                          color:#a19999;
 			         }
 
                      #password{
-				        
 			        	 position:relative;
 				         margin: 3px 0;
-                         font-size: 100%;
+                         font-size: 14px;
                          text-align: center;
-                         color:#a89e9e;
+                         color:#b3aeae;
                      }
                      
                      #username:focus{
                         position:relative;
 				         margin: 3px 0;
-                         font-size: 100%;
+                         font-size: 13px;
                          text-align: center;
                          color:#3d3939;
                      }
@@ -80,19 +73,19 @@
                      #passwordw:focus{
                         position:relative;
 				         margin: 3px 0;
-                         font-size: 100%;
+                         font-size: 14px;
                          text-align: center;
                          color:rgb(54, 47, 47);                    
                     }
                      
                      input{
 				         size: 20px;
-				         color: rgb(97, 89, 89);
-				         border: 1px solid #c5bfbf;
+				         color: rgb(138, 133, 133);
+				         border: 1px solid #d8d0d0;
 				         width: 75%;
 				         outline:none;
 				         padding: 0 5px;
-				         height: 50px;
+				         height: 45px;
 			        	 margin: 1px 1px 1px 1px;
                          border-radius: 25px;
 			         }
@@ -100,8 +93,8 @@
                      input:focus{
                         box-shadow:1px 1px  rgb(224, 213, 213);
                          size: 20px;
-				         color: rgb(114, 104, 104);
-				         border: 1px solid #928c8c;
+				         color: rgb(109, 101, 101);
+				         border: 1px solid #b1acac;
 				         width: 75%;
 				         outline:none;
 				         padding: 0 5px;
@@ -127,22 +120,20 @@
 
                      button{   
 			         	 width: 80%;   
-			        	 height: 50px;
-			        	 color: #81b5df;
+			        	 height: 45px;
+			        	 color: #7ab4e4;
 			        	 background-color:#ffffff;
                          border: 1px solid #8cc6f5;
 			        	 line-height: 40px;  
-			        	 font-size: 16px;  
+			        	 font-size: 14px;  
                          text-align: center;
 				         border-radius: 25px;
                          
 			         }
                      p{
-                         position: absolute;                     
-                         color: #ffffff;
-                         top: 83%;   
-                         left: 13%;    
-                         font-size: 14px;  
+                                            
+                         color: #ffffff; 
+                         font-size: 13px;  
                          overflow: hidden;   
                      }
 
@@ -153,10 +144,9 @@
                         left: 15%;
                     }
                     .qq{
-                        position: absolute;
-                        top: 90%;
-                        left: 45%;
+                        margin-top: 650px;
                     }
+                   
                     .wb{
                         position: absolute;
                         top: 90%;
@@ -166,29 +156,31 @@
 		</style>	
     </head>
     <body>
-              <img src="touxiang.png" class="tou" width="100px" height="100px">
-              <img src="arc.png"  class="kuang" width="120px" height="40px">
+              
     <div class="login-form">
          <form>  
-
+            <img src="touxiang.png" class="tou" width="100px" height="100px"/>
+            <img src="arc.png"  class="kuang" width="120px" height="40px"/>
               <input type="text" id="username" value="admin"/>
-             <br><br/>
+            
               <input type="password" id="password" name="password" placeholder="请输入密码" />
               <input type="hidden" name="password" value="123456">
-            <br>  <br/>
+            <br/>
               <a class="forget" href="#">忘记密码</a>              
-              <a class="register" href="https://forum.chasedream.com/member.php?mod=register">立即注册</a>
-             <br><br/>
+              <a class="register" href="#">立即注册</a>
+          
               <button onclick="myClick()">登录</button>
             </form> 
     </div>
-        <div class="bottomimg">
+        <div class="bottomimg" style="width: 100%;">
+            <p style="text-align:center;width: 85%;">————————第三方登录———————</p> 
           <a href="#"><img src="wx.png" class="wx" width="50px" height="50px"></a>
+        <div style="text-align: center;">
           <a href="#"><img src="qq.png" class="qq" width="50px" height="50px"></a>
+        </div>
           <a href="#"><img src="wb.png" class="wb" width="50px" height="50px"></a>
         </div>
 
-        <p>————————第三方登录———————</p> 
 
     <script>
        let xmlhttp =new XMLHttpRequest();

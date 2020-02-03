@@ -18,29 +18,27 @@ body{
      background: rgb(141, 176, 240);
      font-size:0.18rem;
      color: white;       
-     line-height: 0.75rem;     /*字高低*/      
-     text-align: center;
+     line-height: 0.75rem;      
      font-weight: 100;
      z-index: -1;
      box-shadow: 0 0 4px rgb(132, 152, 231);
 }  
 .shezhi{                 /*设置图标位置*/
      position: absolute;
-     left: 80%;
+     right: 50px;
      top: 0.25rem;
 }
 .sz{                 /*设置文字位置*/
      position: absolute;
-     left: 88%;
+     right: 18px;
      top: -0.01rem;
      font-size: 0.14rem;
      font-weight: 100;
 }
 .tx{                 /*头像*/
-    position: absolute;
-    top: 0.3rem;
-    left: 41%;
-    z-index: 1;
+  
+    margin-top: -0.8rem;
+    
 }
 .loginbox{
    font-size: 15px;
@@ -51,9 +49,9 @@ body{
    margin-top: -0.43rem;       /*离header的距离 负的有交集，z-index大在上面*/
    margin-right: auto;         /*左右居中*/
    margin-left: auto;
-   z-index: 0;  
+   z-index: 20;  
    border-radius: 5px;  
-   box-shadow: 0 1px 4px rgb(174, 211, 253);                     
+   box-shadow: 0 1px 7px rgb(174, 211, 253); 
 }
 .name{                      /*LYY*/
     text-align: center;
@@ -74,38 +72,38 @@ td{                 /*表格*/
     font-weight: 350;
     text-align: center;
     font-size: 17px;
-    color: rgb(47, 49, 49);
+    color: rgb(62, 65, 65);
     width: 1rem;
     height: 5px;
     line-height: 17px;        
 }
 .more1{              /*三个点*/
     position: absolute;
-    right: 0.05rem;
+    right: 0.03rem;
     top: 1.25rem;
 }
 .shuzi1{           /*1112*/
     position: absolute;
-    color: rgb(164, 165, 167);
-    font-size: 12px;
-    top: 1.61rem;
-    right: 0.6rem;
+    color: rgb(180, 182, 187);
+    font-size: 11px;
+    top: 1.64rem;
+    right: 0.63rem;
 }
 .shuzi2{       
     position: absolute;
-    color: rgb(164, 165, 167);
-    font-size: 12px;
-    top: 1.61rem;
+    color: rgb(181, 184, 189);
+    font-size: 11px;
+    top: 1.64rem;
     right: 0.28rem;
 }
 .eye{          /*眼睛图标*/
     position: absolute;
-    top: 1.62rem;
+    top: 1.64rem;
     right: 0.44rem;
 }
 .message{
     position: absolute;
-    top: 1.62rem;
+    top: 1.65rem;
     right: 0.1rem;
 }
 
@@ -118,8 +116,9 @@ td{                 /*表格*/
     margin-top: 0.12rem;
     margin-left: 0.18rem;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(177, 191, 243);    
-   z-index: 0;
+   
+    box-shadow: 1px 1px 8px rgb(177, 191, 243);    
+    z-index: 0;
 }
 .box2{
     position: absolute;
@@ -131,7 +130,10 @@ td{                 /*表格*/
     margin-right: 0.17rem;
     right: 0.01rem;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(181, 195, 252);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(181, 195, 252);
    z-index: 0;
 }
 .box3{
@@ -143,7 +145,10 @@ td{                 /*表格*/
     margin-top: 2.14rem;
     margin-left: 0.18rem; 
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(182, 197, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(182, 197, 255);
     z-index: 0;
 }
 .box4{
@@ -156,7 +161,10 @@ td{                 /*表格*/
     margin-right: 0.17rem; 
     right: 0.01rem;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(162, 178, 241);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    box-shadow: 1px 1px 8px rgb(162, 178, 241);
     z-index: 0;
 }
 
@@ -171,33 +179,30 @@ td{                 /*表格*/
     bottom: 0px;
 }
 .middle{           /*云上传图标*/
-   position: absolute;
-   margin-top: -63px;     /*使边界出盒子*/
-   left: 43%;
+   margin-top: -61px;     /*使边界出盒子*/
    z-index: 20;
-  
 }
 .tb1{       
    position: absolute;
-   bottom: 0.01rem; 
+   bottom: -0.04rem; 
    left: 10%;
    z-index: 20;
 }
 .tb2{       
    position: absolute;
-   bottom: 0.01rem; 
+   bottom: -0.04rem; 
    left: 27%;
    z-index: 20;
 }
 .tb4{
    position: absolute;
-   bottom: 0.01rem; 
+   bottom: -0.04rem; 
    right: 27%;
    z-index: 20;
 }
 .tb5{
    position: absolute;
-   bottom: 0.01rem; 
+   bottom: -0.04rem; 
    right: 10%;
    z-index: 20;
 }

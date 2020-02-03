@@ -6,12 +6,12 @@ body{
     width: 100%;
     height: 100%;
     font-size: 16px;
-    background-color: rgb(229, 237, 245);      
+    background-color: rgb(234, 240, 247);      
 }
 .header{
-   height: 58px;
-   background: rgb(141, 176, 240);
-   font-size: 19px;
+   height: 60px;
+   background: rgb(138, 174, 240);
+   font-size: 18px;
    color: white;       
    line-height: 67px;     /*字高低*/      
    text-align: center;
@@ -22,24 +22,24 @@ body{
 }  
 .message{           /*信息图标*/
     position: absolute;
-    top: 19px;
+    top: 24px;
     left: 5%;
 }
 .search{            /*搜索图标*/
     position: absolute;
-    top: 17px;
-    right: 5%;
+    top: 18px;
+    right: 4%;
 }
 .left-sidebox{
     position: absolute;
-    top: 12%;
-    width: 3%;
+    top: 90px;
+    width: 10px;
+    left: 0;
     background: rgb(141, 177, 243);
     height: 105px;
     border-radius: 0 15px 15px 0;
     box-shadow: 1px 1px 4px rgb(162, 206, 243);
     z-index: 10;
-
 }
 .blue-box{
     height: 128px;
@@ -58,7 +58,7 @@ body{
     padding-top: 28px;
     color: #fff;
     font-size: 20px;
-    font-weight: 520;
+    font-weight: 500;
 }
 .write2{
     text-align: center;
@@ -72,72 +72,45 @@ body{
 }
 .right-sidebox{
     position: absolute;
-    top: 12%;
-    width: 3%;
+    top: 90px;
+    width: 10px;
     right: 0;
-    background: rgb(152, 184, 243);
+    background: rgb(166, 195, 250);
     height: 105px;
     border-radius: 15px 0 0 15px;
     box-shadow: 0 0 3px rgb(165, 206, 240);
     z-index: 10;
 
 }
-.middle-box{
-    height: 114px;
+.middle-box{            /*中间白块*/
+    height: 110px;
     width: 92%;
     background: #fff;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    padding-top: 5px;
+    text-align: center;          /*四个图标整体居中*/
     border-radius: 10px;
-    box-shadow: 1px 1px 4px rgb(222, 229, 236);
+    box-shadow: 1px 1px 6px rgb(214, 224, 235);
 }
-.tp{
-    padding-top: 10px;
+.tp{                /*图标水平分布均匀*/
+    float: left;
+    width: 24%;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 19px;
+    min-width: 50px;
 }
-.tp1{
-    position: absolute;
-    margin-top: 5px;
-    left: 10%;
+@media (max-width:330px ) {
+    .tp{
+        float: left;
+        width: 24%;
+        box-sizing: border-box;
+        padding: 10px;
+        min-width: 50px;
+    }
 }
-.tp2{
-    position: absolute;
-    margin-top: 5px;
-    left: 31.5%;
-}
-.tp3{
-    position: absolute;
-    margin-top: 5px;
-    right: 31.5%;
-}
-.tp4{
-    position: absolute;
-    margin-top: 5px;
-    right: 10%;
-}
-.txt{
-    font-size: 12px;
-    font-weight: 100;
-    margin-top: 75px;
-    color: rgb(144, 176, 235);
-}
-.txt1{
-    position: absolute;
-    left: 15%;
-}
-.txt2{
-    position: absolute;
-    left: 36%;
-}
-.txt3{
-    position: absolute;
-    right: 35%;
-}
-.txt4{
-    position: absolute;
-    right: 14%;
-}
-
 .large-box{
     height: 350px;
     width: 92%;
@@ -146,6 +119,7 @@ body{
     margin-right: auto;
     margin-top: 16px;
     border-radius: 10px;
+    font-weight: 300;
     box-shadow: 0 0 4px rgb(217, 223, 230);
 }
 .shu{
@@ -156,15 +130,16 @@ body{
 .wenzi{
     position: absolute;
     padding-top: 13.5px;
-    left: 12%;
+    left: 10%;
     font-size: 14px;
-    color: rgb(131, 189, 243);
+    font-weight: 350;
+    color: rgb(111, 178, 241);
 }
 
 .more{
     position: absolute;
     right: 8%;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 .box1{
     position: absolute;
@@ -173,7 +148,7 @@ body{
     height: 150px;
     background-color: #fff;
     margin-top: 45px;
-    left: 28px; 
+    left: 8%; 
     z-index: 0;
 }
 .box2{
@@ -183,7 +158,7 @@ body{
     height: 150px;
     background-color: #fff;
     margin-top: 45px;
-    right: 28px; 
+    right: 8%; 
     z-index: 0;
 }
 .box3{
@@ -193,7 +168,7 @@ body{
     height: 100px;
     background-color: #fff;
     margin-top: 225px;
-    left: 28px; 
+    left: 8%; 
     z-index: 0;
 }
 .box4{
@@ -203,7 +178,7 @@ body{
     height: 100px;
     background-color: #fff;
     margin-top: 225px;
-    right: 28px; 
+    right: 8%; 
     z-index: 0;
 }
 
@@ -213,7 +188,7 @@ body{
     margin-top: 4px;
 }
 .footer{            /*底部导航栏*/
-    height: 50px;
+    height: 53px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 5px rgb(181, 194, 250);
@@ -222,21 +197,18 @@ body{
     bottom: 0px;
 }
 .middle{           /*云上传图标*/
-   position: absolute;
-   margin-top: -14px;     /*使边界出盒子*/
-   left: 43%;
+   margin-top: -13px;     /*使边界出盒子*/ 
    z-index: 30;
-  
 }
 .tb1{       
    position: absolute;
-   bottom: 10px; 
+   bottom: 11px; 
    left: 9%;
    z-index: 20;
 }
 .tb2{       
    position: absolute;
-   bottom: 10px; 
+   bottom: 11px; 
    left: 27%;
    z-index: 20;
 }
