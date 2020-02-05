@@ -14,6 +14,13 @@
                          background-image: url('bgd.png');
                          background-repeat: no-repeat;                   
                      }
+                     @media (max-width:330px ) {
+                      .all{
+                          position: absolute;
+                          top: -60px;
+                      }
+                     
+                     }
                      .login-box{
                          background-color: rgb(255, 255, 255);
                          width: 80%;
@@ -35,6 +42,7 @@
                      }
                     
                      input{
+                      
 				         color: rgb(134, 127, 127);
 				         border: 1px solid #d8d0d0;
 				         width: 72%;
@@ -45,6 +53,51 @@
 				         height: 45px;
                          border-radius: 25px;
                      }
+                     input:focus{
+                         box-shadow:0 0 rgb(224, 213, 213);
+				         color: rgb(109, 101, 101);
+				         border: 1px solid #b1acac;
+				         width: 72%;
+                         text-align: center;
+                         margin-top: 30px;
+                         margin-bottom: -10px;
+				         outline:none;
+				         height: 45px;
+                         border-radius: 25px;
+                     }
+
+                     #username{
+				         position:relative;
+				         margin: 15px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#999494;
+			         }
+
+                     #password{
+			        	 position:relative;
+				         margin: 10px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#a39898;
+                     }
+                     
+                     #username:focus{
+                        position:relative;
+				         margin:15px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:#3d3939;
+                     }
+
+                     #passwordw:focus{
+                        position:relative;
+				         margin: 10px 0;
+                         font-size: 15px;
+                         text-align: center;
+                         color:rgb(54, 47, 47);                    
+                    }
+                     
                      a{
                          text-decoration: none;
                          font-size: 13px;
@@ -91,6 +144,7 @@
      </head>
 
    <body>
+<div class="all">
     <div class="kuang">
         <img src="arc.png" width="115px" height="43px"/>
          </div>
@@ -127,8 +181,8 @@
          <a href="#"><img src="wb.png" class="wb" width="45px" height="45px"/></a>
         </div>
       </div>
-    </div>
 
+       </div>       </div>
        <script>
         let xmlhttp =new XMLHttpRequest();
      let usernamestr=document.getElementById('username');

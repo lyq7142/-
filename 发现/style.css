@@ -162,7 +162,6 @@ body{
 
 .footer{            /*底部导航栏*/
     height: 55px;
-    width: 100%;
     background-color: #fff;
     box-shadow: 0 0 5px rgb(181, 194, 250);
     z-index: 10;

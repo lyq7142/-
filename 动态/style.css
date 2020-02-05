@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-body{
+body,html{
     width: 100%;
     height: 100%;
     font-size: 16px;
@@ -22,12 +22,12 @@ body{
 }  
 .message{           /*信息图标*/
     position: absolute;
-    top: 23px;
+    top: 24px;
     left: 5%;
 }
-.more{            /*搜索图标*/
+.more{            /*＋图标*/
     position: absolute;
-    top: 20px;
+    top: 22px;
     right: 5%;
 }
 .fenxiang{
@@ -70,7 +70,7 @@ body{
 .tp2{
     position: absolute;
     margin-top: 5px;
-    left: 34%;
+    left: 35%;
 }
 .tp3{
     position: absolute;
@@ -85,12 +85,12 @@ body{
 .txt{
     font-size: 13px;
     font-weight: 300;
-    margin-top: 45px;
-    color: rgb(116, 118, 121);
+    margin-top: 41px;
+    color: rgb(108, 111, 114);
 }
 .txt1{
     position: absolute;
-    left: 13%;
+    left: 12%;
 }
 .txt2{
     position: absolute;
@@ -102,10 +102,10 @@ body{
 }
 .txt4{
     position: absolute;
-    right: 13%;
+    right: 12%;
 }
 .large-box{          /*中间白大块*/
-    height: 295px;
+    height: 300px;
     width: 90%;
     background: #fff;
     margin-left: auto;
@@ -118,20 +118,23 @@ body{
     border-radius: 5px;
     box-shadow: 0 1px 5px rgb(196, 214, 233);
 }
+.tx1,.tx2{
+    margin-top: 2px;
+    margin-left: 2px;
+}
 
 .lyy{
     position: absolute;
     color: rgb(104, 167, 240);
-    font-weight: 100;
     font-size: 15px;
-    left: 18%;
+    left: 20%;
     top: 220px;
 }
 .time1{
     position: absolute;
     color: rgb(190, 184, 184);
     font-size: 12px;
-    left: 18%;
+    left: 20%;
     top: 238px;
     font-weight: 100;
 }
@@ -161,15 +164,32 @@ body{
 }
 .footbox{           /*图标。。。*/
     position: absolute;
-    margin-top: 170px;
+    margin-top: 171px;
+    width: 90%;
     color: rgb(182, 178, 178);
     padding-left: 5px;
     font-weight: 100;
     font-size: 13px;
 }
+.aixin{
+   margin-bottom: 1px;
+}
+.xinxi{
+    position: absolute;
+    left: 28%;
+}
+.star{
+    position: absolute;
+    right: 41%;
+}
+.share{
+    position: absolute;
+    right: 14%;
+    margin-top: -2px;
+}
 
 .bottom-box{          /*半块*/
-    height: 160px;
+    height: 330px;
     width: 90%;
     background: #fff;
     margin-left: auto;
@@ -178,24 +198,23 @@ body{
     font-size: 13.5px;
     line-height: 20px;
     padding-left: 10px;
-    padding-top: 13px;
+    padding-top: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(202, 219, 236);
 }
 .wsqq{
     position: absolute;
     color: rgb(104, 167, 240);
-    font-weight: 100;
     font-size: 14px;
-    left: 18%;
-    top: 541px;
+    left: 20%;
+    top: 542px;
 
 }
 .time2{
     position: absolute;
     color: rgb(190, 184, 184);
     font-size: 12px;
-    left: 18%;
+    left: 20%;
     top: 561px;
     font-weight: 100;
 }
@@ -212,24 +231,27 @@ body{
     border: 0;
     font-size: 12px;
 }
+.tupian2{
+    position: absolute;
+    margin-top: 11px;
+    width: 88%;
+}
 
 .footer{            /*底部导航栏*/
     height: 55px;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 0 5px rgb(181, 194, 250);
+    box-shadow: 0 0 8px rgb(157, 171, 236);
     z-index: 10;
     position: fixed;        /*固定底部导航栏*/
     bottom: 0px;
 }
 .middle{           /*云上传图标*/
-   position: absolute;
-   margin-top: -12px;     /*使边界出盒子*/
-   left: 43%;
+   margin-top: -10px;     /*使边界出盒子*/
    z-index: 30;
 }
 .tb3{
-    width: 50%;
+    width: 55px;
     height: 55px;
 }
 .tb1{       

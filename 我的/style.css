@@ -46,7 +46,7 @@ body{
    width: 93%;
    padding-top: 0.4rem;    
    background:#fff;
-   margin-top: -0.43rem;       /*离header的距离 负的有交集，z-index大在上面*/
+   margin-top: -0.43rem;    
    margin-right: auto;         /*左右居中*/
    margin-left: auto;
    z-index: 20;  
@@ -72,7 +72,7 @@ td{                 /*表格*/
     font-weight: 350;
     text-align: center;
     font-size: 17px;
-    color: rgb(62, 65, 65);
+    color: rgb(81, 83, 83);
     width: 1rem;
     height: 5px;
     line-height: 17px;        
@@ -103,7 +103,7 @@ td{                 /*表格*/
 }
 .message{
     position: absolute;
-    top: 1.65rem;
+    top: 1.66rem;
     right: 0.1rem;
 }
 
